@@ -105,8 +105,24 @@ The Terraform will locally install the user creds into your kubectl config file 
 
 Use the kubectl config user-context <name> to set the enviroment you wish to deploy too.
 CD into the main app_stack directory in there you will see app_<cloud> stacks which are cloud specifc namaged K8 clusters. CD into the enviroment you wish to deploy too and run
+  
 
 ./full_stack_deploy.sh
+
+
+NOTE: You may need to change permission on the above script and ./clean.sh before you run the scripts. These script reference other scripts 
+at the below within the directory that you should check
+in tiller
+./helm-init.sh
+
+in consul
+./consul.sh
+
+in mariadb
+./mariadb.sh
+
+in vault
+./vault.sh
 
 run kubectl get svc to see the EXTERNAL-IP to connect to for the service.
 
