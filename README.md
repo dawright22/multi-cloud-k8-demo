@@ -110,9 +110,10 @@ CD into the main app_stack directory in there you will see app_<cloud> stacks wh
 ./full_stack_deploy.sh
 
 
-NOTE: You may need to change permission on the above script and ./clean.sh before you run the scripts. These script reference other scripts 
-at the below within the directory that you should check
-in tiller
+NOTE: You may need to change permission on the above script and ./clean.sh before you run the scripts. These script reference other scripts at the below directorys within the app_XXX stack. You should check all the scripts have the correct permision to run. 
+
+tiller
+
 ./helm-init.sh
 
 in consul
