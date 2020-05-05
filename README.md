@@ -116,12 +116,15 @@ in tiller
 ./helm-init.sh
 
 in consul
+
 ./consul.sh
 
 in mariadb
+
 ./mariadb.sh
 
 in vault
+
 ./vault.sh
 
 run kubectl get svc to see the EXTERNAL-IP to connect to for the service.
