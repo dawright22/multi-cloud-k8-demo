@@ -1,3 +1,3 @@
 #!/bin/bash
 
-helm install --name mariadb -f ./values.yaml stable/mariadb
+helm2 install --name mariadb -f ./values.yaml stable/mariadb
